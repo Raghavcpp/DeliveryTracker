@@ -1,0 +1,28 @@
+{
+  "packages": [
+    {
+      "packageNumber": "PKG123456789",
+      "customerName": "Raghav Verma",
+      "storeName": "ElectroKart Delhi",
+      "itemName": "Noise Smartwatch",
+      "itemPrice": 3499,
+      "packageStatus": "On the way"
+    },
+    {
+      "packageNumber": "PKG987654321",
+      "customerName": "Anjali Sharma",
+      "storeName": "GadgetBay Mumbai",
+      "itemName": "JBL Bluetooth Speaker",
+      "itemPrice": 2999,
+      "packageStatus": "Not dispatched"
+    },
+    {
+      "packageNumber": "PKG456789123",
+      "customerName": "Aman Gupta",
+      "storeName": "StyleHub Jaipur",
+      "itemName": "Leather Wallet",
+      "itemPrice": 899,
+      "packageStatus": "Delivered"
+    }
+  ]
+}

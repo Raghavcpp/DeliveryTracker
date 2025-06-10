@@ -1,0 +1,60 @@
+.card-stepper {
+  z-index: 0;
+}
+
+#progressbar-2 {
+  color: #455A64;
+}
+
+#progressbar-2 li {
+  list-style-type: none;
+  font-size: 13px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+  
+}
+
+/* ICON CIRCLE (Before pseudo-element) */
+#progressbar-2 li::before {
+  content: '\f111'; /* FontAwesome dot icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: block;
+  margin: auto;
+  line-height: 37px;
+  font-size: 12px;
+  color: #fff;
+  background: #c5cae9;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+
+/* CONNECTOR LINE (After pseudo-element) */
+#progressbar-2 li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: #c5cae9;
+  top: 15px;
+  right: 50%;
+  z-index: -1;
+}
+
+/* Hide the connector after the last element */
+#progressbar-2 li:first-child::after {
+  content: none;
+}
+
+/* ACTIVE STATES */
+#progressbar-2 li.active::before {
+  content: '\f058'; /* FontAwesome checkmark icon */
+  background: #6520ff;
+  color: #fff;
+}
+
+#progressbar-2 li.active::after {
+  background: #6520ff;
+}
