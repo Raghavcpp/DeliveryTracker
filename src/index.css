@@ -51,6 +51,9 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: "Mona Sans", sans-serif;
+  --color-black-50: #1c1c21;
+  --color-black-100: #0e0e10;
 }
 
 :root {
@@ -128,5 +131,25 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .gradient-line {
+    width: 2px;
+    background: linear-gradient(
+      0deg,
+      rgba(69, 222, 196, 0) 0%,
+      #62e0ff 25%,
+      #52aeff 37.51%,
+      #fd5c79 62.83%,
+      #6d45ce 92.91%
+    );
+  }
+  .header-logo {
+    @apply md:size-20 size-15 rounded-full flex justify-center items-center  border-3 border-black-50 bg-white text-blue-500;
+  }
+  .timeline-logo {
+    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border-3 border-black-50 bg-white text-blue-500;
   }
 }

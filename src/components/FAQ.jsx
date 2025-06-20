@@ -5,13 +5,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { usePackageData } from "@/context/PackageDataContext";
 
 const FAQ = () => {
-  const { packageData1 ,setPackageData } = usePackageData(); 
-  console.log(packageData1)
+  
   return (
-    <div className="max-w-3xl mx-4">
+    <div className="max-w-3xl sm:mx-auto mx-4">
       <h2 className="text-2xl font-semibold text-center mb-6">Frequently Asked Questions</h2>
       <Accordion type="single" collapsible className="space-y-2">
         <AccordionItem value="q1">
